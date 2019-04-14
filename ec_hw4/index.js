@@ -4,15 +4,6 @@ const HOSTED_URLS = {
       'model_js/model.json',
  };
 
-const examples = {
-  'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
-  'example2':
-      'Buda-Pesth seems a wonderful place.',
-  'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
-};
-
 function status(statusText) {
   console.log(statusText);
   document.getElementById('status').textContent = statusText;
@@ -84,35 +75,12 @@ async function loadHostedPretrainedModel(url) {
   }
 }
 
-async function loadHostedMetadata(url) {
-  status('Loading metadata from ' + url);
-  try {
-    const metadataJson = await fetch(url);
-    const metadata = await metadataJson.json();
-    status('Done loading metadata.');
-    return metadata;
-  } catch (err) {
-    console.error(err);
-    status('Loading metadata failed.');
-  }
-}
-
 class Classifier {
 
   async init(urls) {
     this.urls = urls;
     this.model = await loadHostedPretrainedModel(urls.model);
-    await this.loadMetadata();
     return this;
-  }
-
-  async loadMetadata() {
-    const metadata =
-        await loadHostedMetadata(this.urls.metadata);
-    showMetadata(metadata);
-    this.maxLen = metadata['max_len'];
-    console.log('maxLen = ' + this.maxLen);
-    this.wordIndex = metadata['word_index']
   }
 
   predict(text) {
