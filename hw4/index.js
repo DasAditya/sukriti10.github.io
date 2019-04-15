@@ -8,9 +8,7 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Other poultry-yards in the neighbourhood also suffered.--Pilfering was _housebreaking_ to Mr. Woodhouse's fears.--He was very uneasy; and but for the sense
-of his son-in-law's protection, would have been under wretched alarm
-every night of his life.',
+      'Other poultry-yards in the neighbourhood also suffered.',
   'example2':
       ' Tis gone , and will not answer.',
   'example3':
