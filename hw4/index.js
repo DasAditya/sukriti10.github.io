@@ -8,13 +8,15 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+      'Other poultry-yards in the neighbourhood also suffered.--Pilfering was _housebreaking_ to Mr. Woodhouse's fears.--He was very uneasy; and but for the sense
+of his son-in-law's protection, would have been under wretched alarm
+every night of his life.',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      ' Tis gone , and will not answer.',
   'example3':
       'Scepticism was as much the result of knowledge, as knowledge is of scepticism.',
    'example4' : 
-      'Tomorrow is a day',
+      '1 : 3 And God said , Let there be light : and there was light.',
 };
 
 function status(statusText) {
