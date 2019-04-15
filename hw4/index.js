@@ -90,6 +90,19 @@ async function loadHostedPretrainedModel(url) {
   }
 }
 
+async function loadHostedMetadata(url) {
+  status('Loading metadata from ' + url);
+  try {
+    const metadataJson = await fetch(url);
+    const metadata = await metadataJson.json();
+    status('Done loading metadata.');
+    return metadata;
+  } catch (err) {
+    console.error(err);
+    status('Loading metadata failed.');
+  }
+}
+
 class Classifier {
 
   async init(urls) {
@@ -99,6 +112,14 @@ class Classifier {
     return this;
   }
 
+  async loadMetadata() {
+    const metadata =
+        await loadHostedMetadata(this.urls.metadata);
+    showMetadata(metadata);
+    this.maxLen = metadata['max_len'];
+    console.log('maxLen = ' + this.maxLen);
+    this.wordIndex = metadata['word_index']
+  }
 
   predict(text) {
     // Convert to lower case and remove all punctuations.
