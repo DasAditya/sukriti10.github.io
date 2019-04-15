@@ -8,11 +8,11 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Other poultry-yards in the neighbourhood also suffered.',
+      'I will not deny , that she is pretty and a good match.',
   'example2':
       'Tis gone , and will not answer.',
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.',
+      'Spin me the yarn,” said Ahab; “how was it?',
    'example4' : 
       'And God said , Let there be light : and there was light.',
 };
