@@ -8,13 +8,13 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+      'I wish I hadn’t mentioned Dinah!',
   'example2':
-      'But his doom Reserved him to more wrath ; for now the thought Both of lost happiness and lasting pain Torments him.',
+      'These were the prime in order and in might. The rest were long to tell, though far renown’d, Th’ Ionian Gods, of Javans Issue held Gods, yet confest later then Heav’n and Earth.',
   'example3':
-      'When shall we three meet againe ?',
+      'As two spent Swimmers, that doe cling together, And choake their Art:',
    'example4' : 
-      'The family of Dashwood had long been settled in Sussex.',
+      'She was generous, amiable, interesting: she was everything but prudent.',
 };
 
 function status(statusText) {
