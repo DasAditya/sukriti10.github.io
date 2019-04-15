@@ -8,13 +8,13 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'I will not deny , that she is pretty and a good match.',
+      'Alice was beginning to get very tired of sitting by her sister on the bank.',
   'example2':
-      'Tis gone , and will not answer.',
+      'But his doom Reserved him to more wrath ; for now the thought Both of lost happiness and lasting pain Torments him.',
   'example3':
-      'Spin me the yarn,” said Ahab; “how was it?',
+      'When shall we three meet againe ?',
    'example4' : 
-      'And God said , Let there be light : and there was light.',
+      'The family of Dashwood had long been settled in Sussex.',
 };
 
 function status(statusText) {
