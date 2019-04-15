@@ -10,11 +10,11 @@ const examples = {
   'example1':
       'Other poultry-yards in the neighbourhood also suffered.',
   'example2':
-      ' Tis gone , and will not answer.',
+      'Tis gone , and will not answer.',
   'example3':
       'Scepticism was as much the result of knowledge, as knowledge is of scepticism.',
    'example4' : 
-      '1 : 3 And God said , Let there be light : and there was light.',
+      'And God said , Let there be light : and there was light.',
 };
 
 function status(statusText) {
